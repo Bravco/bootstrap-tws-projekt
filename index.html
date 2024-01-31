@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="UTF-8">
+    <title>Nuxt.js | Domov</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+    <header class="mb-5">
+        <nav class="navbar navbar-expand-sm bg-dark bg-body-secondary">
+            <div class="container-sm">
+                <a class="navbar-brand mb-2" href="index.html">
+                    <svg height="24" viewBox="0 0 800 200" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M377 200C379.16 200 381 198.209 381 196V103C381 103 386 112 395 127L434 194C435.785 197.74 439.744 200 443 200H470V50H443C441.202 50 439 51.4941 439 54V148L421 116L385 55C383.248 51.8912 379.479 50 376 50H350V200H377Z" fill="currentColor"></path><path d="M726 92H739C742.314 92 745 89.3137 745 86V60H773V92H800V116H773V159C773 169.5 778.057 174 787 174H800V200H783C759.948 200 745 185.071 745 160V116H726V92Z" fill="currentColor"></path><path d="M591 92V154C591 168.004 585.742 179.809 578 188C570.258 196.191 559.566 200 545 200C530.434 200 518.742 196.191 511 188C503.389 179.809 498 168.004 498 154V92H514C517.412 92 520.769 92.622 523 95C525.231 97.2459 526 98.5652 526 102V154C526 162.059 526.457 167.037 530 171C533.543 174.831 537.914 176 545 176C552.217 176 555.457 174.831 559 171C562.543 167.037 563 162.059 563 154V102C563 98.5652 563.769 96.378 566 94C567.96 91.9107 570.028 91.9599 573 92C573.411 92.0055 574.586 92 575 92H591Z" fill="currentColor"></path><path d="M676 144L710 92H684C680.723 92 677.812 93.1758 676 96L660 120L645 97C643.188 94.1758 639.277 92 636 92H611L645 143L608 200H634C637.25 200 640.182 196.787 642 194L660 167L679 195C680.818 197.787 683.75 200 687 200H713L676 144Z" fill="currentColor"></path><path d="M168 200H279C282.542 200 285.932 198.756 289 197C292.068 195.244 295.23 193.041 297 190C298.77 186.959 300.002 183.51 300 179.999C299.998 176.488 298.773 173.04 297 170.001L222 41C220.23 37.96 218.067 35.7552 215 34C211.933 32.2448 207.542 31 204 31C200.458 31 197.067 32.2448 194 34C190.933 35.7552 188.77 37.96 187 41L168 74L130 9.99764C128.228 6.95784 126.068 3.75491 123 2C119.932 0.245087 116.542 0 113 0C109.458 0 106.068 0.245087 103 2C99.9323 3.75491 96.7717 6.95784 95 9.99764L2 170.001C0.226979 173.04 0.00154312 176.488 1.90993e-06 179.999C-0.0015393 183.51 0.229648 186.959 2 190C3.77035 193.04 6.93245 195.244 10 197C13.0675 198.756 16.4578 200 20 200H90C117.737 200 137.925 187.558 152 164L186 105L204 74L259 168H186L168 200ZM89 168H40L113 42L150 105L125.491 147.725C116.144 163.01 105.488 168 89 168Z" fill="#0d6efd"></path></svg>
+                </a>
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link fw-bold active" href="index.html">Domov</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fw-bold" href="docs.html">Dokumentácia</a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <button type="button" class="btn btn-danger" data-bs-toggle="popover" data-bs-content="Dúfam, že sa Vám stránka páči.">
+                        <i class="bi bi-heart"></i>
+                    </button>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container-sm">
+        <!-- Uvitacia obrazovka -->
+        <div class="container-fluid py-5">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h1 class="mb-3"><span class="text-primary">Nuxt.js</span><br>Vue Rozhranie</h1>
+                    <p class="w-75 m-auto">Nuxt je open source framework, vďaka ktorému je vývoj webu intuitívny a výkonný. Vytvárajte výkonné a produkčné kompletné webové aplikácie a webové stránky s istotou.</p>
+                    <div class="d-flex flex-wrap justify-content-center gap-3 mt-3">
+                        <a class="btn btn-primary" href="docs.html">Dokumentácia</a>
+                        <button type="button" class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#fireshipModal">Čo je Nuxt.js?</button>
+                        <div class="modal" id="fireshipModal">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h4 class="modal-title">Čo je Nuxt.js?</h4>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <iframe width="420" height="240" src="https://www.youtube.com/embed/dCxSsr5xuL8?controls=0"></iframe>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- O Nuxte -->
+        <div class="container-fluid py-5">
+            <div class="row">
+                <div class="col-lg-6 col-md-12">
+                    <h2 class="mb-3">Statické alebo dynamické,<br><span class="text-primary">výber je na tebe</span></h2>
+                    <p>Rozhodnite sa, akú stratégiu vykresľovania potrebujete na úrovni trasy. Využitím hybridného vykresľovania môžete získať to najlepšie z oboch svetov: výkon statickej stránky a interaktivitu dynamickej stránky.</p>
+                    <a class="btn btn-outline-secondary mt-3" href="#moznosti">Možnosti Nuxtu</a>
+                </div>
+                <div class="col-lg-6 col-md-12">
+                    <img class="img-fluid rounded" src="img/about.webp" alt="o-nuxte">
+                </div>
+            </div>
+        </div>
+
+        <!-- Recenzie -->
+        <div class="container-fluid py-5">
+            <h2 class="text-center mb-5">Recenzie</h2>
+            <div id="carouselId" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner w-75 m-auto">
+                    <div class="carousel-item p-3 bg-body-secondary rounded active">
+                        <p>Nuxt ponúka presvedčivé riešenie a skvelý ekosystém, ktorý vám pomôže dodať kompletné aplikácie Vue, ktoré sú výkonné a priateľské k SEO. Flexibilita výberu medzi SSR a SSG je čerešničkou na torte.</p>
+                        <h3 class="h4 text-primary">Evan you</h3>
+                        <span class="h6">Tvorca Vue.js a Vite</span>
+                    </div>
+                    <div class="carousel-item p-3 bg-body-secondary rounded">
+                        <p>Nuxt má vynikajúcu produktivitu vývojárov, skúsenosti a výkon hneď od začiatku! Je tu toľko pozornosti k detailom, vďaka čomu majú tímy všetko na dosah ruky, aby mohli produktívne vytvárať všetky spôsoby aplikácií.</p>
+                        <h3 class="h4 text-primary">Sarah Drasner</h3>
+                        <span class="h6">Riaditeľ inžinierstva, Google</span>
+                    </div>
+                    <div class="carousel-item p-3 bg-body-secondary rounded">
+                        <p>Vo chvíli, keď som prvýkrát použil Nuxt, som sa do neho zamiloval. Okrem jeho škálovateľnosti, výkonu a vývojárskych skúseností je za ním fantastický tím. Ďakujeme, že ste vyvinuli taký skvelý rámec a výrazne zjednodušili náš život!</p>
+                        <h3 class="h4 text-primary">Sarah Vedova</h3>
+                        <span class="h6">Senior Frontend Inžinier, GitLab</span>
+                    </div>
+                </div>
+                <button class="carousel-control-prev text-dark" type="button" data-bs-target="#carouselId" data-bs-slide="prev">
+                    <i class="bi bi-chevron-left fs-4"></i>
+                </button>
+                <button class="carousel-control-next text-dark" type="button" data-bs-target="#carouselId" data-bs-slide="next">
+                    <i class="bi bi-chevron-right fs-4"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Moznosti -->
+        <div id="moznosti" class="container-fluid py-5">
+            <h2 class="text-center mb-5"><span class="text-primary">Komponuj</span> so všetkým</h2>
+            <div class="row">
+                <div class="col-lg-3 col-md-6 px-3 pb-3 mb-3">
+                    <div class="h-100 bg-body-secondary p-3 rounded">
+                        <i class="bi bi-signpost fs-4"></i>
+                        <h3 class="h4">Smerovanie & Rozloženia</h3>
+                        <p>Súborový smerovací systém na vytváranie komplexných pohľadov a rozhraní s výkonným a konvenčným prístupom.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 px-3 pb-3 mb-3">
+                    <div class="h-100 bg-body-secondary p-3 rounded">
+                        <i class="bi bi-plug fs-4"></i>
+                        <h3 class="h4">Načítavanie Údajov</h3>
+                        <p>Skladateľné komponenty, ktoré bežia na serveri na získavanie údajov pre vaše komponenty a umožňujú vám vykresľovať obsah rôznymi spôsobmi.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 px-3 pb-3 mb-3">
+                    <div class="h-100 bg-body-secondary p-3 rounded">
+                        <i class="bi bi-card-image fs-4"></i>
+                        <h3 class="h4">Aktíva & Štýl</h3>
+                        <p>Optimalizácia obrázkov, písma a skriptu so vstavanou podporou modulov CSS, Sass, PostCSS, CSS-in-JS a ďalších.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 px-3 pb-3 mb-3">
+                    <div class="h-100 bg-body-secondary p-3 rounded">
+                        <i class="bi bi-search-heart fs-4"></i>
+                        <h3 class="h4">SEO & Meta Tagy</h3>
+                        <p>Produkcia pripravená a indexovateľná vyhľadávacími nástrojmi a zároveň poskytuje koncovým používateľom pocit aplikácie.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-md-6 px-3 pb-3 mb-3">
+                    <div class="h-100 bg-body-secondary p-3 rounded">
+                        <i class="bi bi-shield-check fs-4"></i>
+                        <h3 class="h4">Middleware</h3>
+                        <p>Pred vykreslením stránky alebo skupiny stránok spustite vlastný kód, ako je overenie, lokalizácia alebo A/B testovanie.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 px-3 pb-3 mb-3">
+                    <div class="h-100 bg-body-secondary p-3 rounded">
+                        <i class="bi bi-database fs-4"></i>
+                        <h3 class="h4">Stavový Manažment</h3>
+                        <p>Nuxt poskytuje jednoduchý spôsob zdieľania reaktívneho a SSR priateľského stavu medzi komponentmi.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 px-3 pb-3 mb-3">
+                    <div class="h-100 bg-body-secondary p-3 rounded">
+                        <i class="bi bi-caret-right-square fs-4"></i>
+                        <h3 class="h4">Prechody</h3>
+                        <p>Vytvárajte plynulé prechody medzi rozloženiami, stránkami a komponentmi so vstavanou podporou prechodov Vue a prehliadača.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 px-3 pb-3 mb-3">
+                    <div class="h-100 bg-body-secondary p-3 rounded">
+                        <i class="bi bi-bug fs-4"></i>
+                        <h3 class="h4">Spracovanie Chýb</h3>
+                        <p>Vstavané spracovanie chýb a protokolovanie, ktoré vám pomôžu ladiť vašu aplikáciu a poskytujú lepšiu používateľskú skúsenosť.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-md-6 px-3 pb-3 mb-3">
+                    <div class="h-100 bg-body-secondary p-3 rounded">
+                        <i class="bi bi-layers fs-4"></i>
+                        <h3 class="h4">Vrstvy</h3>
+                        <p>Rozšírte svoju aplikáciu Nuxt o ďalšiu aplikáciu Nuxt na opätovné použitie komponentov, skladateľných materiálov, rozložení, stránok a ďalších.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 px-3 pb-3 mb-3">
+                    <div class="h-100 bg-body-secondary p-3 rounded">
+                        <i class="bi bi-hdd fs-4"></i>
+                        <h3 class="h4">Serverové Cesty</h3>
+                        <p>Vytvorte koncové body API a serverové trasy na bezpečné pripojenie k službám tretích strán a spotrebu z vášho frontendu.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 px-3 pb-3 mb-3">
+                    <div class="h-100 bg-body-secondary p-3 rounded">
+                        <i class="bi bi-magic fs-4"></i>
+                        <h3 class="h4">Auto Importovanie</h3>
+                        <p>Nuxt automaticky importuje pomocníkov, skladateľné a Vue API na použitie vo vašej aplikácii bez toho, aby ich explicitne importoval.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 px-3 pb-3 mb-3">
+                    <div class="h-100 bg-body-secondary p-3 rounded">
+                        <i class="bi bi-filetype-tsx fs-4"></i>
+                        <h3 class="h4">Typescript</h3>
+                        <p>Nuxt poskytuje užitočné skratky, ktoré vám zaistia prístup k presným informáciám o type pri kódovaní.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="py-3 mt-5 bg-body-secondary">
+        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+          <li class="nav-item"><a href="index.html" class="nav-link px-2 text-body-secondary fw-bold">Domov</a></li>
+          <li class="nav-item"><a href="docs.html" class="nav-link px-2 text-body-secondary fw-bold">Dokumentácia</a></li>
+        </ul>
+        <p class="text-center">&copy; 2024 | Vytvoril Andrej Hamráček</p>
+    </footer>
+
+    <script src="js/bootstrap.js"></script>
+    <script src="js/bootstrap.bundle.js"></script>
+    <script>
+        const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
+        const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
+    </script>
+</body>
+</html>
